@@ -44,6 +44,11 @@ nav, p, section, article{
     position: relative;
 }
 
+article {
+    position: absolute;
+    top:  70px;
+    background-color: #f4a3615e
+}
 
 .hero img {
     display: block;
