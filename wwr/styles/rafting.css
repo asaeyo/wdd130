@@ -49,7 +49,7 @@ body{
 
 
 header, main, footer{
-    width: 840px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -79,7 +79,6 @@ article {
 
 
 .hero img {
-    display: block;
     width: 100%;
     height: auto;
 }
@@ -99,11 +98,17 @@ h1{
     float: right;
     width: 125px;
 }
-figure{
+.adventures {
    display: flex;
    flex-direction: row;
+   justify-content: space-around;
 }
 
+figure img{
+display: block;
+width: 200px;
+height: 100px;
+}
 
 
 footer{
