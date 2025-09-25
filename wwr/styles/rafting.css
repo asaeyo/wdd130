@@ -16,7 +16,7 @@
 nav ul {
     padding: 1rem;
     display: flex;
-    width: 600px;
+    width: 700px;
 }
 
 
@@ -28,6 +28,7 @@ nav a {
     font-size: 1.2rem;
     font-weight: 700;
     border: 1px solid black;
+    width: 200px;
     }
 
 
