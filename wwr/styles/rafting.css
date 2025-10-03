@@ -43,8 +43,10 @@ header {
     border-bottom: 1px solid #ccc;
     max-width: 1000px;
 }
-    
 
+h1{
+    text-align: center;
+}
 
 body{
     font-family: var(--body-font);
@@ -52,7 +54,7 @@ body{
 }
 
 
-header, main, footer{
+header, main, footer, form, .map{
     width: 100%;
     margin: 0 auto;
 }
@@ -62,41 +64,91 @@ h1,h2{
     color: var(--primary-color);
 }
 
-p, section, article{
-    margin: 16px;
-    padding: 8px;
+.grid-container{
+    display: grid;
+    padding: 10px;
 }
 
-.socialmedia a{
-    text-decoration: none;
-}
-
-.hero img{
-    position: relative;
-}
-
-article {
-    position: absolute;
-    top:  252px;
-    background-color:var(--secondary-color);
-}
-
-
-.hero img {
-    width: 100%;
-    height: auto;
-}
-
-h1{
-    position: absolute;
-    top: 200px;
-    width: 100%;
-    padding: 16px;
+.grid-item {
+    padding: 0.2rem;
+    font-size: 20px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
+    font-weight: bold;
 }
+
+.box{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 40px;
+    width: 100%;
+    
+}
+
+.map {
+    margin-left: 10px;
+    width: 100px;
+}
+
+form{
+    width: 600px;
+    margin-top: 10px;
+    margin-right: 15px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    grid-column: 2/3;
+    display: block;
+}
+
+
+legend{
+    padding: 0.5rem;
+    font-size: 1.0rem;
+}
+
+label,input,button,select,textarea{
+    font-family: Roboto, Arial, sans-serif;
+}
+
+label{
+    
+    padding-right: 1rem;
+}
+
+input{
+    padding: .75rem;
+    width: 450px;
+}
+
+input,select,textarea{
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"]{
+    width: 50px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+input[type="radio"]{
+    width: 15px;
+    height: 15px;
+    position:relative;
+         
+}
+
+.message{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+
+.column3{
+    margin-top: 10px;
+}
+
+
 
 h2{
     text-align: center;
@@ -105,43 +157,71 @@ h2{
     font-family: var(--heading-font);
     color: var(--primary-color);
     font-size: 2rem;
+    padding: 20px;
+    margin: auto;
 }
 
-.hero article img {
-    float: right;
-    width: 125px;
+fieldset{
+    display: grid;
+    grid-gap: .5rem;
+    padding: 1rem;
 }
-.adventures {
+
+textarea{
+    width: 550px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+}
+
+.employees {
    display: flex;
    flex-direction: row;
    justify-content: space-around;
 }
 
-.history{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.history img{
-    display: block;
-    width: 500px;
+.staff{
+    border: black;
+    border-style:double;
 }
 
 figure img{
 display: block;
-width: 200px;
+width: 100px;
 height: 100px;
 }
 
+figure caption{
+    font-size: smaller;
+    font-style: italic;
+}
+
+button{
+    margin-top: 10px;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem;
+    font-size: 1.2rem;
+    width: 400px;
+}
+
+button:hover{
+    background-color: darkgreen;
+}
 
 footer{
     display: flex;
     flex-direction: row;
 }
 
+.socialmedia a{
+    text-decoration: none;
+}
+
 .socialmedia{
     display: flex;
-    gap: 10px;
+    justify-content: space-around;
+    gap: 30px;
 }
