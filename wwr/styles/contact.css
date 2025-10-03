@@ -136,20 +136,18 @@ input[type="radio"]{
          
 }
 
-
-
-.column2 {
-    float:right;
+.message{
+    display: flex;
+    direction: row;
+    margin-top: 40px;
 }
+
 
 .column3{
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
-legend{
-    display: inline-block;
-   
-}
+
 
 h2{
     text-align: center;
@@ -170,7 +168,7 @@ fieldset{
 
 textarea{
     width: 550px;
-    margin-top: 0.5rem;
+    margin-top: 5px;
     margin-bottom: 10px;
 
 }
@@ -198,7 +196,7 @@ figure caption{
 }
 
 button{
-    margin: 50px;
+    margin-top: 10px;
     background-color: navy;
     color: #fff;
     border: none;
