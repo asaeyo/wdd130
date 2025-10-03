@@ -139,7 +139,7 @@ input[type="radio"]{
 
 .message{
     display: flex;
-    direction: row;
+    flex-direction: row;
     margin-top: 40px;
 }
 
