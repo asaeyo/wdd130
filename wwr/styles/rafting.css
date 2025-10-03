@@ -44,9 +44,38 @@ header {
     max-width: 1000px;
 }
 
-h1{
-    text-align: center;
+.hero img{
+    position: relative;
 }
+
+article {
+    position: absolute;
+    top:  252px;
+    background-color:var(--secondary-color);
+}
+
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+}
+
+h1{
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 1.7;
+    background-color: var(--accent1-color);
+    
+}
+
 
 body{
     font-family: var(--body-font);
@@ -61,12 +90,36 @@ header, main, footer, form, .map{
 
 h1,h2{
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: #fff;
 }
+p, section, article{
+    margin: 16px;
+    padding: 8px;
+}
+
+.adventures {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+.history{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.history img{
+    display: block;
+    width: 500px;
+}
+
 
 .grid-container{
     display: grid;
     padding: 10px;
+    margin-top: 50px;
 }
 
 .grid-item {
