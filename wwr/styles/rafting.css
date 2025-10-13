@@ -93,7 +93,7 @@ h1,h2{
     color: #fff;
 }
 p, section, article{
-    margin: 16px;
+    /*margin: 16px;*/
     padding: 8px;
 }
 
@@ -120,6 +120,11 @@ p{
     text-align: justify;
 }
 
+p2{
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 30px;
+}
 .grid-container{
     display: grid;
     padding: 10px;
@@ -222,6 +227,7 @@ fieldset{
     display: grid;
     grid-gap: .5rem;
     padding: 1rem;
+    margin-top: 5px;
 }
 
 textarea{
@@ -331,16 +337,7 @@ button:hover{
 .join2{order:1;}
 .join3{order:3;}
 
-p2{
-    font-size: 18px;
-    font-style: oblique;
-}
 
-p1{
-    font-size: 20px;
-    font-family:cursive;
-    
-}
 
 .visit {
     margin-top: 50px;
@@ -480,12 +477,17 @@ tbody>tr:nth-of-type(even) {
     border-radius: 4px;
     text-decoration: none;
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 50px;
     }
 
 .cta-button:hover{
     background-color: #218838;
 
+}
+
+.cta-text{
+    text-align: center;
+    font-size: 18px;
 }
 
 footer{
